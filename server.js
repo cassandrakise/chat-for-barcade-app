@@ -1,4 +1,8 @@
 const express = require('express');
+const app = express();
+const cors = require('cors'); // added due to this video: https://www.youtube.com/watch?v=djMy4QsPWiI
+
+app.use(cors()); // added via link rec on line 2
 
 const PORT = process.env.PORT || 3000;
 const INDEX = '/index.html';
