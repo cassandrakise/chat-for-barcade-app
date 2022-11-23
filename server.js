@@ -1,3 +1,4 @@
+const socketIO = require('socket.io');
 const express = require('express');
 
 const PORT = process.env.PORT || 3000;
@@ -15,7 +16,6 @@ io.on('connection', (socket) => {
   });
 
 setInterval(() => io.emit('time', new Date().toTimeString()), 1000);
-
 
 
 
