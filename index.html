@@ -12,12 +12,11 @@
 </html>
 
 <script>
-    var HOST = location.origin.replace(/^http/, 'ws')
-    var ws = new WebSocket(HOST);
-    var el;
+var socket = io();
+var el;
 
-ws.onmessage = function (event) {
-  el = document.getElementById('server-time');
-  el.innerHTML = 'Server time: ' + event.data;
-};
+socket.on('time', function(timeString) {
+  el = document.getElementById('server-time')
+  el.innerHTML = 'Server time: ' + timeString;
+});
 </script>
