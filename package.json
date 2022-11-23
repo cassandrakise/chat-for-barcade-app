@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "chat-for-barcade-app",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassandrakise/chat-for-barcade-app.git"
+  },
+  "engines": {
+    "node": "12.17.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassandrakise/chat-for-barcade-app/issues"
+  },
+  "homepage": "https://github.com/cassandrakise/chat-for-barcade-app#readme",
+  "dependencies": {
+    "bufferutil": "^4.0.7",
+    "express": "^4.18.2",
+    "utf-8-validate": "^5.0.10",
+    "ws": "^8.11.0"
+  }
+}
